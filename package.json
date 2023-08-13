@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "test",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "node --max-old-space-size=5120 node_modules/nuxt/bin/nuxt.mjs build",
+    "generate": "nuxt generate",
+    "start": "node .output/server/index.mjs",
+    "preview": "nuxt preview",
+    "lint": "eslint --fix '**/*.{vue,ts,js}'",
+    "build-ci-config": "node ci/generate-conf/index.js",
+    "release-patch": "standard-version -- --release-as path",
+    "release-minor": "standard-version -- --release-as minor"
+  },
+  "dependencies": {
+    "@intlify/nuxt3": "0.2.4",
+    "browser-image-compression": "1.0.12",
+    "effector": "22.1.2",
+    "effector-vue": "22.0.2",
+    "nuxt": "3.0.0"
+  },
+  "devDependencies": {
+    "@esbuild/linux-x64": "0.17.16",
+    "@nuxtjs/eslint-config": "12.0.0",
+    "@nuxtjs/eslint-config-typescript": "12.0.0",
+    "@types/node": "18.15.11",
+    "@typescript-eslint/eslint-plugin": "5.59.0",
+    "@typescript-eslint/parser": "5.58.0",
+    "esbuild-linux-64": "npm:0.13.15",
+    "eslint": "8.3.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-import-resolver-typescript": "3.5.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-vue": "9.10.0",
+    "eslint-plugin-vue-pug": "0.6.0",
+    "postcss": "8.4.4",
+    "postcss-nested": "5.0.6",
+    "postcss-preset-env": "7.0.2",
+    "prettier": "2.8.7",
+    "pug": "3.0.2",
+    "pug-plain-loader": "1.1.0",
+    "standard-version": "9.3.2",
+    "typescript": "4.9.5",
+    "vite-plugin-eslint": "1.8.1",
+    "vue-eslint-parser": "9.1.1"
+  },
+  "packageManager": "yarn@3.2.0"
+}

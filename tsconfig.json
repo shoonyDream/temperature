@@ -1,0 +1,20 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": true,
+    "noEmit": true,
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/i18n"
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "./nuxt.config.ts",
+    "./public"
+  ]
+}

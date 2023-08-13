@@ -1,0 +1,9 @@
+node_modules/*
+ci/*
+.nuxt/*
+build_scripts/*
+endpoints/*
+mocks/*
+public/*
+package.json
+cypress/*
